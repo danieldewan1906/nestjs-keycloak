@@ -98,6 +98,8 @@ export class AuthService {
             createdAt: new Date()
         });
 
+        console.log("USER =>", user);
+
         try {
             await user.save();
         } catch (e) {
